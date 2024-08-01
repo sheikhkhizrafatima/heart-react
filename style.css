@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3px;
+    background-color: #fafafa;
+   
+    
+  }
+  .post-container {
+    width: 350px;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+   
+
+  }
+  .post-header, .post-footer {
+    display: flex;
+    align-items: center;
+    padding: 2px;
+  }
+  .post-header img, .post-footer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .post-header h3, .post-footer h3 {
+    margin: 0;
+    font-size: 15px;
+  }
+  .post-image {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    cursor: pointer;
+  }
+
+  .post-like{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    
+  }
+  #save{
+   margin-left: 14rem;
+  }
+
+  .post-caption {
+    padding: 6px;
+  }
+  .post-caption p {
+    margin-top: 2px;
+    font-size: 12px;
+  }
+
+.love .heart{
+    position: absolute;
+    font-size: 40px;
+    color: red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    cursor: pointer;
+}
+
+.heart.active{
+  animation: animate 0.8s linear forwards;
+}
+
+@keyframes animate{
+  30%{
+    opacity: 1;
+    font-size: 80px;
+  }
+  50%{
+    opacity: 5;
+    font-size: 60px;
+  }
+  70%{
+    opacity: 7;
+    font-size: 70px;
+  }
+  80%{
+    opacity: 8;
+    font-size: 60px;
+  }
+  90%{
+    opacity: 9;
+    font-size: 60px;
+  }
+}
